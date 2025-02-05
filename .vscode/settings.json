@@ -1,0 +1,5 @@
+{
+    "diffEditor.wordWrap": "inherit",
+    "chat.editor.wordWrap": "off",
+    "editor.wordWrap": "on"
+}
