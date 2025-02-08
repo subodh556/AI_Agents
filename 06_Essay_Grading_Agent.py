@@ -1,9 +1,4 @@
-# Key Components:
 
-# State Graph: Defines the workflow of the grading process
-# LLM Model: Provides the underlying language understanding and analysis
-# Grading Functions: Separate functions for each evaluation criterion
-# Conditional Logic: Determines the flow of the grading process based on interim scores
 
 # Method:
 
