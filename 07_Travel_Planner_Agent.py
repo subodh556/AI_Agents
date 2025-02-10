@@ -85,14 +85,6 @@ workflow.add_edge("create_itinerary", END)
 
 app = workflow.compile()
 
-display(
-    Image(
-        app.get_graph().draw_mermaid_png(
-            draw_method=MermaidDrawMethod.API,
-        )
-    )
-)
-
 def run_travel_planner(user_request: str):
     print(f"Initial Request: {user_request}\n")
     state = {
