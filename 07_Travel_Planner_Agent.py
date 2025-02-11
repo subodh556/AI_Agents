@@ -102,5 +102,4 @@ def run_travel_planner(user_request: str):
         "itinerary": "",
     }
     
-    for output in app.stream(state):
-        pass  # The nodes themselves now handle all printing
+    
