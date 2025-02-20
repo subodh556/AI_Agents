@@ -1,3 +1,4 @@
+--upgrade crewai
 crewai
 crewai_tools
 streamlit
