@@ -1,8 +1,7 @@
 import os
 import streamlit  as st
-import crewai,crewai_tools
-from crewai import Agent, Task, Crew
-from crewai_tools import ScrapeWebsiteTool
+from main import Agent, Task, Crew
+from main import ScrapeWebsiteTool
 import time
 from dotenv import load_dotenv , find_dotenv
 
