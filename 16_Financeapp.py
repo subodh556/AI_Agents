@@ -1,22 +1,27 @@
 import os
 import streamlit  as st
+import crewai,crewai_tools
 from crewai import Agent, Task, Crew
 from crewai_tools import ScrapeWebsiteTool
 import time
 from dotenv import load_dotenv , find_dotenv
-from langchain_groq import ChatGroq
 
 # os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 _ = load_dotenv(find_dotenv())
 
+#run this command in the terminal to login to the huggingface platform -> huggingface-cli login --token 'your access token' --add-to-git-credential
 
 os.environ["OPENAI_API_KEY"] = "dummy-key"
 
+HUGGINGFACEHUB_API_TOKEN = os.environ["HUGGINGFACEHUB_API_TOKEN"] 
 
 from crewai import LLM
 
 chatm = LLM(
-    model="huggingface/meta-llama/Llama-3.2-3B-Instruct"
+    model="huggingface/mistralai/Mistral-7B-Instruct-v0.3",
+    api_key = HUGGINGFACEHUB_API_TOKEN,
+    max_tokens=4000,
+    max_completion_tokens=4000
 )
 
 
