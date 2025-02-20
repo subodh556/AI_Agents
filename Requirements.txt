@@ -1,4 +1,2 @@
---upgrade crewai
-crewai
-crewai_tools
-streamlit
+pip install --no-cache-dir crewai
+pip install --no-cache-dir crewai_tools
