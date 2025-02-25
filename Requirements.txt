@@ -1,2 +1,0 @@
-pip install --no-cache-dir crewai
-pip install --no-cache-dir crewai_tools
